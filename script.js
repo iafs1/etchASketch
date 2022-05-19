@@ -11,7 +11,6 @@ function mainLoop(grid_size) {
         div.style.width = `${new_width}%`,
         div.style["padding-bottom"] = `${new_width}%`;
     });
-
 }
 
 function changeGrid(grid_size) {
@@ -26,6 +25,7 @@ function changeGrid(grid_size) {
 
 let grid_size;
 const btn = document.querySelector("button");
+
 btn.addEventListener("click", () => {
     grid_size = prompt("How many squares?"),
     changeGrid(grid_size);
